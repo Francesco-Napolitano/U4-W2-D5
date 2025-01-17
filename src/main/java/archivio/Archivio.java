@@ -45,7 +45,7 @@ public class Archivio {
                 .map(elemento -> (Libri) elemento)
                 .filter(libro -> libro.getAutore().equalsIgnoreCase(autore))
                 .collect(Collectors.toList());
-    } 
+    }
 
     // Modifica di un elemento
     public void aggiornaElemento(String isbn, ElementoCatalogo nuovoElemento) throws Exception {
