@@ -47,11 +47,6 @@ public class Archivio {
                 .collect(Collectors.toList());
     }
 
-    // Modifica di un elemento
-    public void aggiornaElemento(String isbn, ElementoCatalogo nuovoElemento) throws Exception {
-        rimuoviElemento(isbn);
-        aggiungiElemento(nuovoElemento);
-    }
 
     // Infine ci sono le statistiche del catalogo
     public void stampaStatistiche() {
