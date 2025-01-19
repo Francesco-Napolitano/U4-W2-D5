@@ -51,7 +51,7 @@ public class Archivio {
     // Infine ci sono le statistiche del catalogo
     public void stampaStatistiche() {
         int numeroLibri = (int) catalogo.stream().filter(elemento -> elemento instanceof Libri).count();
-        int  numeroRiviste = (int) catalogo.stream().filter(elemento -> elemento instanceof Riviste).count();
+        int numeroRiviste = (int) catalogo.stream().filter(elemento -> elemento instanceof Riviste).count();
 
         System.out.println("Numero di libri: " + numeroLibri);
         System.out.println("Numero di riviste: " + numeroRiviste);

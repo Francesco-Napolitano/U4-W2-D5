@@ -31,7 +31,7 @@ public class Main {
             int scelta = scanner.nextInt();
             scanner.nextLine();
 
-            if(!archivioPieno && scelta != 1 && scelta != 8) {
+            if (!archivioPieno && scelta != 1 && scelta != 8) {
                 System.out.println("Aggiungi prima qualche elemento all'archivio. ");
                 continue;
             }
@@ -96,7 +96,7 @@ public class Main {
         } else if (tipo.equals("rivista")) {
             System.out.print("Periodicità (SETTIMANALE, MENSILE, SEMESTRALE): ");
             String periodicita = scanner.nextLine().toUpperCase();
-            Riviste.Periodicita period =Riviste.Periodicita.valueOf(periodicita);
+            Riviste.Periodicita period = Riviste.Periodicita.valueOf(periodicita);
             archivio.aggiungiElemento(new Riviste(isbn, titolo, anno, pagine, period));
             System.out.println("Rivista aggiunta con successo!");
         } else {

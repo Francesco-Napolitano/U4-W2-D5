@@ -13,10 +13,21 @@ public abstract class ElementoCatalogo {
         this.numeroPagine = numeroPagine;
     }
 
-    public String getIsbn() { return ISBN; }
-    public String getTitolo() { return titolo; }
-    public int getAnnoPubblicazione() { return annoPubblicazione; }
-    public int getNumeroPagine() { return numeroPagine; }
+    public String getIsbn() {
+        return ISBN;
+    }
+
+    public String getTitolo() {
+        return titolo;
+    }
+
+    public int getAnnoPubblicazione() {
+        return annoPubblicazione;
+    }
+1
+    public int getNumeroPagine() {
+        return numeroPagine;
+    }
 
     public String toString() {
         return "ISBN: " + ISBN + ", Titolo: " + titolo + ", Anno: " + annoPubblicazione +

@@ -2,7 +2,8 @@ package catalogo;
 
 public class Riviste extends ElementoCatalogo {
     //scritto in public in modo che possa essere selezionato nel main dallo switch
-    public enum Periodicita { SETTIMANALE, MENSILE, SEMESTRALE }
+    public enum Periodicita {SETTIMANALE, MENSILE, SEMESTRALE}
+
     private Periodicita periodicita;
 
     public Riviste(String isbn, String titolo, int annoPubblicazione, int numeroPagine, Periodicita periodicita) {
@@ -10,7 +11,9 @@ public class Riviste extends ElementoCatalogo {
         this.periodicita = periodicita;
     }
 
-    public Periodicita getPeriodicita() { return periodicita; }
+    public Periodicita getPeriodicita() {
+        return periodicita;
+    }
 
     @Override
     public String toString() {

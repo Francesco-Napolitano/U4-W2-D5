@@ -10,8 +10,13 @@ public class Libri extends ElementoCatalogo {
         this.genere = genere;
     }
 
-    public String getAutore() { return autore; }
-    public String getGenere() { return genere; }
+    public String getAutore() {
+        return autore;
+    }
+
+    public String getGenere() {
+        return genere;
+    }
 
     @Override
     public String toString() {
